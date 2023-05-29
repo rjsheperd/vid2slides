@@ -5,11 +5,11 @@ channels:
 dependencies:
   - ffmpeg=4.3.1
   - pip=20.2.2=py38_0
-  - python=3.8.5=h7579374_1
+  - python=3.8.5
   - setuptools=49.6.0=py38_0
   - tesseract=4.1.1
   - pip:
-    - decord==0.4.2
+    - decord==0.5.0
     - ffmpeg-python==0.2.0
     - imageio==2.9.0
     - imageio-ffmpeg==0.4.2
