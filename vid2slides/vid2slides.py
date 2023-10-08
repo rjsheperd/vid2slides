@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import argparse
 import collections
 import cv2
@@ -275,6 +277,8 @@ def extract_crop(info):
         if el['type'] == 'slide':
             im = cv2.imread(el['source'])
             ims.append(im.mean(axis=2))
+
+    print(f'INFO: {info} IMAGES: {ims}')
 
     A = np.stack(ims, axis=0)
     broad_crop = (A.mean(axis=0) > .2).astype(np.uint8)
